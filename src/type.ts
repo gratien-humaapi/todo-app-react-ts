@@ -1,6 +1,18 @@
+//
+
 export interface Todo {
-    name: string,
-    color?:string,
-    startTime: string,
-    endTime: string,
-  }
+  id: string;
+  title: string,
+  color: string,
+  startTime: string,
+  endTime: string,
+  isChecked: boolean,
+}
+
+
+export interface UpdateTodo {
+  title: string,
+  color: string,
+  startTime: string,
+  endTime: string,
+}

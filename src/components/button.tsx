@@ -1,7 +1,7 @@
 export default function CustomButton(props: {
   title: string;
-  color?: string;
-  backgroundColor?: string;
+  color?: string | null;
+  backgroundColor?: string | null;
   onClick: VoidFunction;
   marginRight?: string;
 }) {

@@ -1,0 +1,66 @@
+
+.todo-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* .todo-card-checkbox{
+    border-radius: 10px;
+    color: coral;
+    background-color: crimson;
+    outline: 2px solid #000;
+    width: 16px;
+    height: 16px;
+} */
+
+.todo-card{
+    height: 158px;
+    border-radius: 20px;
+    padding: 14px;
+    background-color: white;
+    margin: 0px 8px 8px 0px;
+}
+
+
+
+/* Apply custom styles to the checkbox */
+.todo-card-checkbox {
+     -webkit-appearance: none; /* Remove default appearance */
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000; /* Custom border color */
+    border-radius: 6px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Customize the checkbox appearance when checked */
+  .todo-card-checkbox:checked {
+    background-color: #EA6f66; /* Custom background color when checked */
+    border-color: #EA6f66; /* Custom border color when checked */
+  }
+  
+  /* Customize the indicator (checkmark) */
+  .todo-card-checkbox::before {
+    content: '\2714'; /* Checkmark unicode character */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white; /* Checkmark color */
+    /* visibility: hidden; */
+  }
+  
+  /* Show the checkmark when the checkbox is checked */
+  .todo-card-checkbox:checked::before {
+    visibility: visible;
+  }
+  
